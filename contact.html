@@ -1,48 +1,69 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Tricia Beauty Salon - Professional beauty, hair, and salon services."
+        content="Contact Tricia Beauty Saloon for professional beauty services, enquiries, and appointments."
     >
 
-    <title>Tricia Beauty Salon</title>
+    <title>Contact Us | Tricia Beauty Saloon</title>
 
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
 
 <body>
 
+    <!-- =========================================
+         HEADER
+    ========================================== -->
     <header class="site-header">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo" aria-label="Tricia Beauty Salon Home">
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Tricia Beauty Saloon Home"
+        >
             <img
                 src="image/beauty_logo.webp"
-                alt="Tricia Beauty Salon Logo"
+                alt="Tricia Beauty Saloon Logo"
             >
         </a>
 
-        <!-- Navigation -->
-        <nav class="navbar" aria-label="Main Navigation">
+        <nav
+            class="navbar"
+            aria-label="Main Navigation"
+        >
 
             <button
                 class="menu-toggle"
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="primary-navigation"
             >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <ul class="nav-list">
-
+            <ul
+                class="nav-list"
+                id="primary-navigation"
+            >
                 <li>
                     <a href="index.html">HOME</a>
                 </li>
@@ -64,7 +85,12 @@
                 </li>
 
                 <li>
-                    <a href="contact.html">CONTACT</a>
+                    <a
+                        href="contact.html"
+                        aria-current="page"
+                    >
+                        CONTACT
+                    </a>
                 </li>
 
                 <li>
@@ -75,14 +101,618 @@
                         BOOK AN APPOINTMENT
                     </a>
                 </li>
-
             </ul>
 
         </nav>
 
     </header>
 
-    <script src="script.js"></script>
+
+    <main>
+
+        <!-- =========================================
+             CONTACT HERO
+        ========================================== -->
+        <section class="contact-hero">
+
+            <div class="contact-hero-content">
+
+                <span class="section-label">
+                    GET IN TOUCH
+                </span>
+
+                <h1>
+                    Contact
+                    <span>Tricia Beauty Saloon</span>
+                </h1>
+
+                <p>
+                    We'd love to hear from you! Whether you have a
+                    question, need more information about our services,
+                    or want to book an appointment, our team is here
+                    to help.
+                </p>
+
+                <div class="hero-signature">
+                    Your Beauty, Our Priority
+                    <span>♡</span>
+                </div>
+
+                <div class="signature-line"></div>
+
+            </div>
+
+
+            <div class="contact-hero-image">
+
+                <img
+                    src="image/Contact face.webp"
+                    alt="Woman enjoying a beauty treatment"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT SECTION
+        ========================================== -->
+        <section class="contact-section">
+
+            <div class="contact-container">
+
+                <!-- CONTACT INFORMATION -->
+                <div class="contact-information">
+
+                    <span class="section-label">
+                        CONTACT INFORMATION
+                    </span>
+
+
+                    <!-- Phone -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div class="contact-details">
+
+                            <h3>Phone</h3>
+
+                            <a href="tel:+2348123456789">
+                                +234 907 662 8992
+                            </a>
+
+                            <a href="tel:+2347039876543">
+                                +234 916 156 0016
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-info-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div class="contact-details">
+
+                            <h3>Email</h3>
+
+                            <a href="mailto:info@triciabeautysaloon.com">
+                                info@triciabeautysaloon.com
+                            </a>
+
+                            <a href="mailto:support@triciabeautysaloon.com">
+                                support@triciabeautysaloon.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Address -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div class="contact-details">
+
+                            <h3>Address</h3>
+
+                            <p>
+                                Goldie 193, Calabar
+                            </p>
+
+                            <span>
+                                Beside Unical
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Working Hours -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-info-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div class="contact-details">
+
+                            <h3>Working Hours</h3>
+
+                            <p>
+                                Monday – Saturday:
+                                8:00 AM – 7:00 PM
+                            </p>
+
+                            <p>
+                                Sunday:
+                                10:00 AM – 5:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Follow Us -->
+                    <div class="contact-follow">
+
+                        <span class="section-label">
+                            FOLLOW US
+                        </span>
+
+                        <div class="contact-social-links">
+
+                            <a
+                                href="#"
+                                aria-label="Facebook"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="TikTok"
+                            >
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+
+                            <a
+                                href="#"
+                                aria-label="WhatsApp"
+                            >
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+
+                        </div>
+
+                        <p class="follow-message">
+                            Let's stay connected! ♡
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+
+                    <span class="section-label">
+                        SEND US A MESSAGE
+                    </span>
+
+                    <h2>
+                        We're Here to Help
+                    </h2>
+
+                    <p class="form-intro">
+                        Fill out the form below and we'll get back
+                        to you as soon as possible.
+                    </p>
+
+
+                    <form
+                        class="contact-form"
+                        action="https://formspree.io/f/xgaegyky"
+                        method="post"
+                    >
+
+                        <div class="contact-form-row">
+
+                            <div class="form-group">
+
+                                <label for="contact-name">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contact-name"
+                                    name="name"
+                                    placeholder="Full Name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="contact-email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contact-email"
+                                    name="email"
+                                    placeholder="Email Address"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="contact-phone"
+                                name="phone"
+                                placeholder="Phone Number"
+                                autocomplete="tel"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-subject">
+                                Subject
+                            </label>
+
+                            <select
+                                id="contact-subject"
+                                name="subject"
+                                required
+                            >
+                                <option value="">
+                                    Select a subject
+                                </option>
+
+                                <option value="appointment">
+                                    Appointment
+                                </option>
+
+                                <option value="hair">
+                                    Hair Styling
+                                </option>
+
+                                <option value="nails">
+                                    Nail Care
+                                </option>
+
+                                <option value="makeup">
+                                    Makeup
+                                </option>
+
+                                <option value="skin-care">
+                                    Skin Care
+                                </option>
+
+                                <option value="other">
+                                    Other
+                                </option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="contact-message">
+                                Your Message
+                            </label>
+
+                            <textarea
+                                id="contact-message"
+                                name="message"
+                                placeholder="Write your message..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="send-btn"
+                        >
+                            <i class="fa-solid fa-paper-plane"></i>
+                            SEND MESSAGE
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FEATURES
+        ========================================== -->
+        <section class="features-section">
+
+            <div class="features-container">
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+
+                    <div>
+                        <h3>Professional</h3>
+                        <p>Beauty Services</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+
+                    <div>
+                        <h3>Safe &amp; Hygienic</h3>
+                        <p>Environment</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <h3>Skilled &amp; Friendly</h3>
+                        <p>Team</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+
+                    <div>
+                        <h3>Your Beauty</h3>
+                        <p>Our Priority</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-brand">
+                    Tricia Beauty Saloon
+                    <span>♡</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column footer-about">
+
+                <h2>
+                    TRICIA
+                    <span>BEAUTY SALON</span>
+                </h2>
+
+                <p>
+                    Where beauty meets elegance. We bring out the
+                    best in you with professional beauty services
+                    in a relaxing and luxurious environment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li>
+                        <a href="service.html">Hair Styling</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Braids &amp; Weaves</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Nail Care</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Makeup</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Skin Care</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Lashes</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Goldie 193, Abuja
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+
+                    <a href="tel:+2348123456789">
+                        +234 812 345 6789
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+
+                    <a href="mailto:info@triciabeautysaloon.com">
+                        info@triciabeautysaloon.com
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Social -->
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="footer-social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Tricia Beauty Saloon.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with elegance &amp; passion.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/sscript.js"></script>
 
 </body>
 </html>

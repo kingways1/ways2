@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +6,32 @@
 
     <meta
         name="description"
-        content="Tricia Beauty Salon - Professional beauty, hair, and salon services."
+        content="Tricia Beauty Salon offers professional hair styling, braiding, makeup, nail care, skincare, waxing and massage services."
     >
 
-    <title>Tricia Beauty Salon</title>
+    <title>Services | Tricia Beauty Salon</title>
 
     <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
 
+    <!-- =========================================
+         HEADER
+    ========================================== -->
     <header class="site-header">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo" aria-label="Tricia Beauty Salon Home">
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Tricia Beauty Salon Home"
+        >
             <img
                 src="image/beauty_logo.webp"
                 alt="Tricia Beauty Salon Logo"
             >
         </a>
 
-        <!-- Navigation -->
         <nav class="navbar" aria-label="Main Navigation">
 
             <button
@@ -35,37 +39,21 @@
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="primary-navigation"
             >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <ul class="nav-list">
+            <ul class="nav-list" id="primary-navigation">
 
-                <li>
-                    <a href="index.html">HOME</a>
-                </li>
-
-                <li>
-                    <a href="about.html">ABOUT US</a>
-                </li>
-
-                <li>
-                    <a href="service.html">SERVICES</a>
-                </li>
-
-                <li>
-                    <a href="gallery.html">GALLERY</a>
-                </li>
-
-                <li>
-                    <a href="pricing.html">PRICING</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">CONTACT</a>
-                </li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="service.html" aria-current="page">SERVICES</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="pricing.html">PRICING</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
 
                 <li>
                     <a
@@ -82,7 +70,433 @@
 
     </header>
 
-    <script src="script.js"></script>
+
+    
+
+
+<!-- =========================================
+     SERVICES INTRODUCTION
+========================================= -->
+<section class="services-intro" aria-labelledby="services-intro-title">
+
+    <!-- Left Image -->
+    <div class="services-intro__image">
+        <img
+            src="image/makeuo-box.webp"
+            alt="Professional makeup products"
+        >
+    </div>
+
+    <!-- Content -->
+    <div class="services-intro__content">
+
+        <span class="services-intro__subtitle">
+            OUR
+        </span>
+
+        <h1 id="services-intro-title">
+            SERVICES
+        </h1>
+
+        <p>
+            We offer a wide range of professional beauty services
+            designed to bring out the best in you. From stunning
+            hairstyles and braiding to makeup, skincare, nails,
+            and other beauty treatments, our skilled professionals
+            are dedicated to making every visit relaxing and memorable.
+        </p>
+
+        <p>
+            Look beautiful. Feel confident. Be uniquely you.
+        </p>
+
+        <a
+            href="appointment.html"
+            class="services-intro__button"
+        >
+            BOOK AN APPOINTMENT
+        </a>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="services-intro__image">
+        <img
+            src="image/braid2 (1).webp"
+            alt="Professional braided hairstyle"
+        >
+    </div>
+
+</section>
+
+
+    
+<!-- =========================================
+     SERVICES GRID
+========================================= -->
+<section class="services-section" aria-labelledby="services-title">
+
+    <div class="services-container">
+
+        <!-- Section Header -->
+        <header class="services-header">
+
+            <span class="section-subtitle">
+                WHAT WE OFFER
+            </span>
+
+            <h2 id="services-title">
+                OUR BEAUTY SERVICES
+            </h2>
+
+            <p>
+                Discover professional beauty treatments designed to
+                enhance your natural beauty and leave you feeling
+                confident, refreshed, and beautiful.
+            </p>
+
+        </header>
+
+
+        <!-- Services -->
+        <div class="services-grid">
+
+            <!-- Hair Styling -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/hairstyle-service.webp"
+                        alt="Professional hair styling service"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>HAIR STYLING</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        From classic looks to trending styles, we create
+                        beautiful hairstyles that make you look and
+                        feel flawless.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Nail Care -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/pedicure-menicure.webp"
+                        alt="Professional manicure and pedicure service"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>NAIL CARE</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        Enjoy professional manicures, pedicures,
+                        nail extensions, and more for beautifully
+                        groomed hands and feet.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Facials & Skin Care -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/facials-service.webp"
+                        alt="Professional facial and skincare treatment"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>FACIALS &amp; SKIN CARE</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        Rejuvenate and nourish your skin with customized
+                        facials and professional skincare treatments.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Makeup -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/makeup-srvice.webp"
+                        alt="Professional makeup application service"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>MAKEUP</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        Professional makeup services for every occasion.
+                        Look beautiful, confident, and feel your
+                        absolute best.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Waxing -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/waxing.webp"
+                        alt="Professional waxing treatment"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>WAXING</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        Enjoy smooth, silky skin with our safe, gentle,
+                        hygienic, and professional waxing services.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- Massage -->
+            <article class="service-item">
+
+                <div class="service-item__image">
+                    <img
+                        src="image/massage.webp"
+                        alt="Professional relaxing massage service"
+                        loading="lazy"
+                    >
+                </div>
+
+                <div class="service-item__content">
+
+                    <h3>MASSAGE</h3>
+
+                    <span class="service-line" aria-hidden="true"></span>
+
+                    <p>
+                        Relax your body and mind with our soothing,
+                        rejuvenating, and professional massage services.
+                    </p>
+
+                    <a
+                        href="appointment.html"
+                        class="service-link"
+                    >
+                        Book An Appointment
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column footer-about">
+
+                <h2>
+                    TRICIA
+                    <span>BEAUTY SALON</span>
+                </h2>
+
+                <p>
+                    Where beauty meets elegance. We bring out the best
+                    in you with professional beauty services in a
+                    relaxing and luxurious environment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li><a href="service.html">Hair Styling</a></li>
+                    <li><a href="service.html">Braids &amp; Weaves</a></li>
+                    <li><a href="service.html">Nail Care</a></li>
+                    <li><a href="service.html">Makeup</a></li>
+                    <li><a href="service.html">Skin Care</a></li>
+                    <li><a href="service.html">Lashes</a></li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Abuja, Nigeria
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+                    <a href="tel:+2340000000000">
+                        +234 000 000 0000
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:info@triciabeautysaloon.com">
+                        info@triciabeautysaloon.com
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="social-links">
+                <a href="#" aria-label="Instagram">Instagram</a>
+                <a href="#" aria-label="Facebook">Facebook</a>
+                <a href="#" aria-label="TikTok">TikTok</a>
+                <a href="#" aria-label="WhatsApp">WhatsApp</a>
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Tricia Beauty Salon. All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with elegance &amp; passion.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/sscript.js"></script>
 
 </body>
 </html>
+

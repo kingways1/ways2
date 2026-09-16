@@ -1,76 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="Tricia Beauty Salon - Professional beauty, hair, and salon services."
+        content="Book an appointment at Tricia Beauty Saloon for professional beauty services."
     >
 
-    <title>Tricia Beauty Salon</title>
+    <title>Book an Appointment | Tricia Beauty Saloon</title>
 
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style/style.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
 </head>
 
 <body>
 
+    <!-- =========================================
+         HEADER
+    ========================================== -->
     <header class="site-header">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo" aria-label="Tricia Beauty Salon Home">
+        <a
+            href="index.html"
+            class="logo"
+            aria-label="Tricia Beauty Saloon Home"
+        >
             <img
                 src="image/beauty_logo.webp"
-                alt="Tricia Beauty Salon Logo"
+                alt="Tricia Beauty Saloon Logo"
             >
         </a>
 
-        <!-- Navigation -->
-        <nav class="navbar" aria-label="Main Navigation">
+
+        <nav
+            class="navbar"
+            aria-label="Main Navigation"
+        >
 
             <button
                 class="menu-toggle"
                 type="button"
                 aria-label="Open navigation menu"
                 aria-expanded="false"
+                aria-controls="primary-navigation"
             >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
 
-            <ul class="nav-list">
+
+            <ul
+                class="nav-list"
+                id="primary-navigation"
+            >
 
                 <li>
-                    <a href="index.html">HOME</a>
+                    <a href="index.html">
+                        HOME
+                    </a>
                 </li>
 
                 <li>
-                    <a href="about.html">ABOUT US</a>
+                    <a href="about.html">
+                        ABOUT US
+                    </a>
                 </li>
 
                 <li>
-                    <a href="service.html">SERVICES</a>
+                    <a href="service.html">
+                        SERVICES
+                    </a>
                 </li>
 
                 <li>
-                    <a href="gallery.html">GALLERY</a>
+                    <a href="gallery.html">
+                        GALLERY
+                    </a>
                 </li>
 
                 <li>
-                    <a href="pricing.html">PRICING</a>
+                    <a href="pricing.html">
+                        PRICING
+                    </a>
                 </li>
 
                 <li>
-                    <a href="contact.html">CONTACT</a>
+                    <a href="contact.html">
+                        CONTACT
+                    </a>
                 </li>
 
                 <li>
                     <a
                         href="appointment.html"
                         class="appointment-btn"
+                        aria-current="page"
                     >
                         BOOK AN APPOINTMENT
                     </a>
@@ -82,7 +122,676 @@
 
     </header>
 
-    <script src="script.js"></script>
+
+    <main>
+
+        <!-- =========================================
+             APPOINTMENT HERO
+        ========================================== -->
+        <section class="appointment-hero">
+
+            <div class="appointment-hero-content">
+
+                <p class="hero-small-title">
+                    LOOK GOOD &nbsp;•&nbsp;
+                    FEEL GOOD &nbsp;•&nbsp;
+                    BE YOU
+                </p>
+
+                <h1>
+                    Book an
+                    <span>Appointment</span>
+                </h1>
+
+                <p class="hero-description">
+                    Schedule your beauty session with us and let
+                    our professional team bring out the best in you.
+                </p>
+
+                <div class="hero-decoration">
+
+                    <span></span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                    <span></span>
+
+                </div>
+
+            </div>
+
+
+            <div class="appointment-hero-image">
+
+                <img
+                    src="image/1-bullet.webp"
+                    alt="Beauty treatment at Tricia Beauty Saloon"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             APPOINTMENT SECTION
+        ========================================== -->
+        <section class="appointment-section">
+
+            <div class="appointment-container">
+
+                <!-- APPOINTMENT FORM -->
+                <div class="appointment-card">
+
+                    <div class="card-heading">
+
+                        <i class="fa-regular fa-calendar-days"></i>
+
+                        <div>
+
+                            <h2>
+                                Appointment Form
+                            </h2>
+
+                            <p>
+                                Fill in the form below to book your
+                                preferred service and time. We'll get
+                                back to you shortly to confirm your
+                                appointment.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <form
+                        class="appointment-form"
+                        action="https://formspree.io/f/xgaegyky"
+                        method="post"
+                    >
+
+                        <!-- Full Name -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-name">
+                                Full Name
+                                <span>*</span>
+                            </label>
+
+                            <div class="appointment-input-box">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="appointment-name"
+                                    name="name"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Phone -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-phone">
+                                Phone Number
+                                <span>*</span>
+                            </label>
+
+                            <div class="appointment-input-box">
+
+                                <i class="fa-solid fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="appointment-phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Email -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-email">
+                                Email Address
+                            </label>
+
+                            <div class="appointment-input-box">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="appointment-email"
+                                    name="email"
+                                    placeholder="Enter your email address (optional)"
+                                    autocomplete="email"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Service -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-service">
+                                Service Required
+                                <span>*</span>
+                            </label>
+
+                            <div
+                                class="appointment-input-box appointment-select-box"
+                            >
+
+                                <i class="fa-solid fa-spa"></i>
+
+                                <select
+                                    id="appointment-service"
+                                    name="service"
+                                    required
+                                >
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option value="hair">
+                                        Hair Styling
+                                    </option>
+
+                                    <option value="braids">
+                                        Braids &amp; Weaves
+                                    </option>
+
+                                    <option value="nails">
+                                        Nail Care
+                                    </option>
+
+                                    <option value="makeup">
+                                        Makeup
+                                    </option>
+
+                                    <option value="facials">
+                                        Facials &amp; Skin Care
+                                    </option>
+
+                                    <option value="lashes">
+                                        Lashes
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Date -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-date">
+                                Preferred Date
+                                <span>*</span>
+                            </label>
+
+                            <div class="appointment-input-box">
+
+                                <i class="fa-regular fa-calendar"></i>
+
+                                <input
+                                    type="date"
+                                    id="appointment-date"
+                                    name="date"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Time -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-time">
+                                Preferred Time
+                                <span>*</span>
+                            </label>
+
+                            <div
+                                class="appointment-input-box appointment-select-box"
+                            >
+
+                                <i class="fa-regular fa-clock"></i>
+
+                                <select
+                                    id="appointment-time"
+                                    name="time"
+                                    required
+                                >
+                                    <option value="">
+                                        Select preferred time
+                                    </option>
+
+                                    <option value="09:00">
+                                        9:00 AM
+                                    </option>
+
+                                    <option value="10:00">
+                                        10:00 AM
+                                    </option>
+
+                                    <option value="11:00">
+                                        11:00 AM
+                                    </option>
+
+                                    <option value="12:00">
+                                        12:00 PM
+                                    </option>
+
+                                    <option value="13:00">
+                                        1:00 PM
+                                    </option>
+
+                                    <option value="14:00">
+                                        2:00 PM
+                                    </option>
+
+                                    <option value="15:00">
+                                        3:00 PM
+                                    </option>
+
+                                    <option value="16:00">
+                                        4:00 PM
+                                    </option>
+
+                                    <option value="17:00">
+                                        5:00 PM
+                                    </option>
+
+                                    <option value="18:00">
+                                        6:00 PM
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Additional Message -->
+                        <div class="appointment-form-group">
+
+                            <label for="appointment-message">
+                                Additional Message
+                                <small>(optional)</small>
+                            </label>
+
+                            <div class="appointment-textarea-box">
+
+                                <i class="fa-regular fa-comment-dots"></i>
+
+                                <textarea
+                                    id="appointment-message"
+                                    name="message"
+                                    placeholder="Tell us anything we should know..."
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Submit -->
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            <i class="fa-regular fa-paper-plane"></i>
+                            BOOK APPOINTMENT
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <!-- CONTACT CARD -->
+                <aside class="appointment-contact-card">
+
+                    <h2>
+                        Get in Touch
+                    </h2>
+
+                    <p class="contact-intro">
+                        We're here to help! You can also reach us
+                        through the following channels.
+                    </p>
+
+
+                    <!-- Phone -->
+                    <div class="appointment-contact-item">
+
+                        <div class="appointment-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Phone</h3>
+
+                            <p>
+                                +234 913 456 7890
+                            </p>
+
+                            <a href="tel:+2349134567890">
+                                Call or WhatsApp
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="appointment-contact-item">
+
+                        <div class="appointment-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Email</h3>
+
+                            <a
+                                href="mailto:triciabeautysaloon@gmail.com"
+                            >
+                                triciabeautysaloon@gmail.com
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Address -->
+                    <div class="appointment-contact-item">
+
+                        <div class="appointment-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Address</h3>
+
+                            <p>
+                                Goldie 193
+                            </p>
+
+                            <small>
+                                As shown on Google Map
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Working Hours -->
+                    <div class="appointment-contact-item">
+
+                        <div class="appointment-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>Working Hours</h3>
+
+                            <p>
+                                Monday – Saturday:
+                                9:00 AM – 7:00 PM
+                            </p>
+
+                            <p>
+                                Sunday:
+                                10:00 AM – 5:00 PM
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Location -->
+                    <div class="appointment-location-box">
+
+                        <div class="location-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Our Location
+                            </h3>
+
+                            <p>
+                                Goldie 193, Calabar, Cross River State
+                            </p>
+
+                            <span>
+                                Visit us for your beauty experience.
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-ending">
+
+                        <span>♥</span>
+
+                        We'd love to see you!
+
+                        <div></div>
+
+                    </div>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column footer-about">
+
+                <h2>
+                    TRICIA
+                    <span>BEAUTY SALON</span>
+                </h2>
+
+                <p>
+                    Where beauty meets elegance. We bring out
+                    the best in you with professional beauty
+                    services in a relaxing and luxurious
+                    environment.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Services</a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="pricing.html">Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Our Services</h3>
+
+                <ul>
+                    <li>
+                        <a href="service.html">Hair Styling</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Braids &amp; Weaves</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Nail Care</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Makeup</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Skin Care</a>
+                    </li>
+
+                    <li>
+                        <a href="service.html">Lashes</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <div class="footer-column footer-contact">
+
+                <h3>Contact Us</h3>
+
+                <p>
+                    <strong>Location:</strong><br>
+                    Goldie 193, Calabar
+                </p>
+
+                <p>
+                    <strong>Phone:</strong><br>
+
+                    <a href="tel:+2349134567890">
+                        +234 913 456 7890
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+
+                    <a href="mailto:triciabeautysaloon@gmail.com">
+                        triciabeautysaloon@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Social Links -->
+        <div class="footer-social">
+
+            <h3>Follow Us</h3>
+
+            <div class="footer-social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 Tricia Beauty Saloon.
+                All Rights Reserved.
+            </p>
+
+            <p>
+                Designed with elegance &amp; passion.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/sscript.js"></script>
 
 </body>
 </html>
